@@ -1,0 +1,30 @@
+{
+  "title": "Oxford English-Tagalog",
+  "description": "Download the latest Oxford English-Tagalog dictionary from GitHub straight to /dictionaries/oxford-en-tl/. Wi-Fi required.",
+  "author": "mrcloudworks-glitch",
+  "version": "1.1.0",
+  "browse": {
+    "format": "json",
+    "url": "https://api.github.com/repos/mrcloudworks-glitch/oxford-english-to-tagalog/contents/oxford-en-tl?ref=main",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/vnd.github.raw"
+    },
+    "items": "",
+    "fields": {
+      "title": "name",
+      "author": "size",
+      "id": "sha"
+    },
+    "page_size": 8
+  },
+  "download": {
+    "url": "https://api.github.com/repos/mrcloudworks-glitch/oxford-english-to-tagalog/contents/oxford-en-tl/{title}?ref=main",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/vnd.github.raw"
+    },
+    "dest_dir": "/dictionaries/oxford-en-tl",
+    "filename": "{title}"
+  }
+}
